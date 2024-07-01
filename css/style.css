@@ -4,14 +4,35 @@ body{
 }
 .page-title{
     font-size: xx-large;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+#img-group{
+    display: block;
+    margin: auto;
+    position: fixed;
+    float: left;
 }
 .btn-group{
+    
     margin: auto;
-    width: 50%;
-    position: fixed;
-    bottom: 0%;
+    display: block;
     text-align: center;
-    float: left;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-content: center;
 }
 .button{
     border: none;
@@ -25,10 +46,18 @@ body{
     cursor: pointer;
   }
 
-  .button1{background-color: aqua;}
-  .button2{background-color: coral;}
-  .button3{background-color: antiquewhite;}
+  .button1{background-color: rgb(255, 8, 0);}
+  .button2{background-color: rgb(255, 255, 255);}
+  .button3{background-color: rgb(247, 5, 5);}
 
   p{
     font-size:large ;
+    text-align: center;
+  }
+  img{
+    display: block;
+    margin: auto;
+    position: static;
+    right: 0;
+    left: 0;
   }
