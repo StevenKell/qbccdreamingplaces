@@ -6,24 +6,55 @@ body{
     font-size: xx-large;
     text-align: center;
 }
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-.row::after {
-content: "";
-clear: both;
-display: table;
+
+#index-subhead {
+    text-align: center;
+    font-size: x-large;
 }
 
-#img-group{
-    display: block;
-    margin: auto;
-    position: fixed;
-    float: left;
-}
-.btn-group{
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 70%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+
+  
+  p {
+    font-size:large ;
+    text-align: center;
+  }
+  
+  }
+  ul.myul {
+    text-align: center;
+    list-style-position: inside;
+    font-size: larger;
+  }
+  .btn-group{
     
     margin: auto;
     display: block;
@@ -50,14 +81,9 @@ display: table;
   .button2{background-color: rgb(255, 255, 255);}
   .button3{background-color: rgb(247, 5, 5);}
 
-  p{
-    font-size:large ;
-    text-align: center;
-  }
-  img{
-    display: block;
+  img.wt {
     margin: auto;
-    position: static;
-    right: 0;
+    position: fixed;
     left: 0;
+    right: 0;
   }
