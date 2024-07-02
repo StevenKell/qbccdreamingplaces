@@ -1,0 +1,78 @@
+#selfie {
+    position: fixed;
+width: 25%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 70%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }   
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: DodgerBlue;
+    gap: 10px;
+ 
+   }
+
+.flex-container > event-image-container {
+    flex-direction: row;
+    margin: 15px;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: center;
+    
+}
+.flex-container > index-image-container {
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: center;
+  width: calc(25% - 20px);
+  
+}
+
+div.box img{
+    
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+   
+}
+.selfie {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.logo-pic {
+    width: 2%;
+}
+
+
